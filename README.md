@@ -27,7 +27,6 @@
 ![animation (2)](https://user-images.githubusercontent.com/60036785/145813952-280429ab-d29e-489e-a042-2c643a21b5dd.gif)
 
 
-https://user-images.githubusercontent.com/60036785/145811402-069006ba-a75d-45c5-9086-18511788d370.mp4
 
 
 
