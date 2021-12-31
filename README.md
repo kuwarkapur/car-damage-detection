@@ -19,7 +19,7 @@
     <a href="https://github.com/kuwarkapur/car-damage-detection/issues">Request Feature</a>
   </p>
 </p>
- ![Contributors](https://img.shields.io/github/contributors/kuwarkapur/car-damage-detection?color=dark-green)![License](https://img.shields.io/github/license/kuwarkapur/car-damage-detection) 
+ ![License](https://img.shields.io/github/license/kuwarkapur/car-damage-detection) 
 
 ## Demonstation
 ![animation (2)](https://user-images.githubusercontent.com/60036785/145813952-280429ab-d29e-489e-a042-2c643a21b5dd.gif)
