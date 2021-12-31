@@ -20,8 +20,7 @@
   </p>
 </p>
 
-
-![Downloads](https://img.shields.io/github/downloads/kuwarkapur/car-damage-detection/total) ![Contributors](https://img.shields.io/github/contributors/kuwarkapur/car-damage-detection?color=dark-green) ![Issues](https://img.shields.io/github/issues/kuwarkapur/car-damage-detection) ![License](https://img.shields.io/github/license/kuwarkapur/car-damage-detection) 
+ ![License](https://img.shields.io/github/license/kuwarkapur/car-damage-detection) 
 
 ## Demonstation
 ![animation (2)](https://user-images.githubusercontent.com/60036785/145813952-280429ab-d29e-489e-a042-2c643a21b5dd.gif)
