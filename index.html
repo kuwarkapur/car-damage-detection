@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="static/favicon.ico" rel="icon" type="image/x-icon" />
+<title>Car Damage Assessment</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=verdana" rel="stylesheet">
+
+<!-- Jasny Bootstrap -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+
+
+
+
+<style>
+body {
+  font: 14px verdana, sans-serif;
+  line-height: 1.8;
+  color:  #171717; 
+}
+p {font-size: 14px;}
+.margin {margin-bottom: 45px;}
+
+
+.bg-2 { 
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)),
+  url('../static/uploads/ford-mustang-hd-wallpaper-download-wallpaper-wiki.jpg');
+background-size: cover;
+color: #ffffff;
+}
+
+#first {
+  padding: 240px 0px 240px 0px;
+}
+footer {
+  background-color: #171717;
+  color: #f5f5f5;
+  padding: 60px;
+}
+
+
+
+.container-fluid {
+    padding: 70px 50px 70px 50px;
+}
+.container-fluid div {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+</style>
+</head>
+<body>
+<!-- Third Container (Submit damage assessment)  -->
+<div class="container-fluid bg-2 text-center" id="third">
+{% if scroll %}
+<script>
+    document.location.hash = '#' + '{{ scroll }}';
+</script>
+{% endif %}
+    <h3>Submit Damage Assessment</h3>
+        <div class = flashes>
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+            <p>{{ message }}</p>
+          {% endfor %}
+        {% endif %}
+        {% endwith %}</div>
+  <!--   <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+  <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+  <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+  <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+  <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Submit</a>
+  </div> -->
+
+<div class="fileinput fileinput-new" data-provides="fileinput">
+  <div class="fileinput-preview thumbnail" data-trigger="fileinput" id="window"></div>
+  <div>
+    <form action="assessment" method="POST" enctype="multipart/form-data" class ="form-inline">
+    <span class="btn btn-default btn-file">
+    <span class="fileinput-new">Select Image</span>
+    <span class="fileinput-exists">Change</span>
+    <input type="file" id="filename" name="file"></span>
+    <button type="submit" class="btn btn-default fileinput-exists" id="analyze" onclick="loading();">Submit</button></form></div>
+
+  </div>
+  <div id="loading"></div>
+      <h4>Things to keep in mind:</h4>
+    <p>the first and foremost thing to keep in mind is that to upload a picture of a car only</p>
+    <p>upload the image showing where the damage has been exactly done</p>
+    <p>Maximum size of the file should be 10MB.</p>
+    <p>image format should be jpg, jpeg, gif and png </p>
+  </div>
+</div>
+</body>
+<footer class="bg-4 text-center">
+
+  </a><br><br>
+  <p>Created by kuwar kapur, 2021. <br>
+  <a href="mailto:kuwarkapur@gmail.com" title="Email">Email</a> | <a href="https://github.com/kuwarkapur" title="Github">Github</a> | <a href="https://www.linkedin.com/in/kuwar-kapur-936aa0183/" title="Linkedin">Linkedin</a></p> 
+</footer>
+</html>
