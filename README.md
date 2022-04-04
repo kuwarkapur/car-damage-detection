@@ -1,16 +1,5 @@
-# car-damage-detection
-<br/>
-<p align="center">
-  <a href="https://github.com/kuwarkapur/car-damage-detection">
- 
-  </a>
+
   
-  # Dataset link ↷
-  https://drive.google.com/file/d/1IYx9kCFgCWUJgudc8Uxn59CkExRei431/view?usp=sharing
-  
- 
-  
-  ![Contributors](https://img.shields.io/github/contributors/kuwarkapur/car-damage-detection?color=dark-green) ![License](https://img.shields.io/github/license/kuwarkapur/car-damage-detection) 
 
 ## Demonstation
 ![animation (2)](https://user-images.githubusercontent.com/60036785/145813952-280429ab-d29e-489e-a042-2c643a21b5dd.gif)
@@ -19,22 +8,20 @@
 
 
 
-## Table Of Contents
-
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Application](#Application)
-* [Contributing](#contributing)
-* [License](#license)
-* [Authors](#authors)
 
 
 ## About The Project
-
-
-
 Assessing Car Damage with Convolutional Neural Networks
 Created a webapp which can be used in the process of the personal auto claims process with computer vision and deep learning. Identifying damage location and severity with accuracies of 77% and 71% respectively, using transfer learning on VGG16. Deployed web app with Flask and Bootstrap for real-time car damage evaluations. 
+  
+## **Procedure** 
+<ul dir="auto">
+<li>Run <code>damage.py</code> for training the model on the base of which we will see that if a car is damaged or not.</li>
+<li>Then run <code>location.py</code> for training the model on the base of which we will see that where the car is damaged</li>
+<li>Then run <code>Severity.py</code>for training the model on the base of which we will see that how severe the damage is </li>
+<li>Finally, run <code>main.py</code> for testing the model </li>
+</ul>  
+
 ## Built With
 
 OPENCV
@@ -63,6 +50,14 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+
+  # Dataset link ↷
+  https://drive.google.com/file/d/1IYx9kCFgCWUJgudc8Uxn59CkExRei431/view?usp=sharing
+  
+ 
+  
+  ![Contributors](https://img.shields.io/github/contributors/kuwarkapur/car-damage-detection?color=dark-green) ![License](https://img.shields.io/github/license/kuwarkapur/car-damage-detection) 
 
 ## License
 
